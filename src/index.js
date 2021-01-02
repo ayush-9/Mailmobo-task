@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {Check} from "./components/context"
 
 ReactDOM.render(
   <React.StrictMode>
+    <Check>
     <App />
+    </Check>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
