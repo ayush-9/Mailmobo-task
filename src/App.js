@@ -1,8 +1,8 @@
 //import logo from './logo.svg';
 import { useContext } from 'react';
 import './App.css';
-import { data } from './components/context';
-import Header from './components/Header';
+import { data } from './component/context';
+import Header from './component/Header';
 
 function App() {
   const {requests,OOD,DEL,INT,DEX,NFI} =useContext(data);

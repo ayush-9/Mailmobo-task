@@ -1,18 +1,23 @@
 import React, { useState, useContext } from 'react'
 import Infobox from './Infobox';
 import { data } from "./context";
-import RightTable from './RightTable';
+import LeftTable from './LeftTable';
+import Righttable from './Righttable';
 export default function Header() {
     const { requests,OOD,DEL,INT,DEX,NFI } = React.useContext(data);
     
     //console.log(requests);
     const [status, setStatus] = useState("DEL");
+    const [id, setSelectedid] = useState("5d309ea2048c0a3321692de7");
     // const [d, setD] = useState({});
     // setD(OOD);
     return (
+        <>
+        
         <div className="container">
             <div className="header">
-            <Infobox onClick={(e) => setStatus("DEL")}
+            <Infobox onClick={(e) => {setStatus("DEL");    
+        }}
             ood={DEL}
             name={"DEL"}
           />
@@ -34,9 +39,18 @@ export default function Header() {
           />
         </div>
         <div>
-          <RightTable status={status} requests={requests}/>
         </div>
         </div>
+        <div className="row">
+            <div className="col-md-5">
+                <Righttable id={id} requests={requests} />
+            </div>
+         <div className="col-md-7">
+         <LeftTable status={status} requests={requests} setSelectedid={setSelectedid}/>
+         </div>
+         </div>
+      </>
+        
         
     )
 }
