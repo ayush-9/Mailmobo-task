@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react'
 import Infobox from './Infobox';
 import { data } from "./context";
+import RightTable from './RightTable';
 export default function Header() {
     const { requests,OOD,DEL,INT,DEX,NFI } = React.useContext(data);
     
@@ -31,6 +32,9 @@ export default function Header() {
             ood={NFI}
             name={"NFI"}
           />
+        </div>
+        <div>
+          <RightTable status={status} requests={requests}/>
         </div>
         </div>
         

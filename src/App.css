@@ -1,38 +1,75 @@
-.App {
+body{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  height: 200px;
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading{
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  background-color: antiquewhite;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.right-table{
+  
+  border: 2px solid #cbddf5;
+  padding: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sc{
+  height: 600px;
+  overflow-y: scroll;
+}
+.single{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.single h1{
+  font-size: 12px;
+}
+.head{
+  display: flex;
+ 
+}
+table { 
+  border-collapse: collapse; 
 }
 
-.App-link {
-  color: #61dafb;
+th{
+  width:150px; 
+  text-align:center; 
+  Color:rgb(151, 149, 149); 
+  padding:5px
+  
 }
+td { 
+  width:150px; 
+  text-align:center; 
+  border:2px solid #cbddf5; 
+  padding:5px 
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+} 
+.om1{ 
+  border-right:hidden; 
+  
+} 
+.om2{
+border-left:hidden;
+}
+.geeks { 
+  border-right:hidden; 
+  border-left:hidden;
+} 
+.gfg { 
+  border-collapse:separate; 
+  border-spacing:0 15px; 
+} 
+h1 { 
+  color:green; 
+}
+h6{
+  font-size: 12px;
 }
