@@ -34,7 +34,8 @@ const Check = ({ children }) => {
     <data.Provider
       value={{
         requests,
-        OOD,DEL,INT,DEX,NFI
+        OOD,
+        DEL,INT:INT,DEX:DEL,NFI:NFI
       }}
     >
       {children}
