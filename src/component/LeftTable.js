@@ -49,12 +49,12 @@ export default function LeftTable({status,requests,setSelectedid}) {
                 
                     <th><h6>AWB NUMBER</h6></th>
                     <th><h6>TRANSPORTER</h6></th>
-                    <th><h6>SOURCE</h6></th>
+                    <th><h6 className="h6c">SOURCE</h6></th>
                     <th><h6>DESTINATION</h6></th>
                     <th><h6>BRAND</h6></th>
-                    <th><h6>START DATE</h6></th>
-                    <th><h6>ETD</h6></th>
-                    <th><h6>STATUS</h6></th>
+                    <th><h6 >START DATE</h6></th>
+                    <th><h6 >ETD</h6></th>
+                    <th><h6 className="h6c">&nbsp;&nbsp;STATUS</h6></th>
                 
                 </thead>
                 </table>

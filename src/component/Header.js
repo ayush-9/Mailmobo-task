@@ -20,22 +20,27 @@ export default function Header() {
         }}
             ood={DEL}
             name={"DEL"}
+            active={status === "DEL"}
           />
             <Infobox onClick={(e) => setStatus("OOD")}
             ood={OOD}
             name={"OOD"}
+            active={status === "OOD"}
           />
           <Infobox onClick={(e) => setStatus("INT")}
             ood={INT}
             name={"INT"}
+            active={status === "INT"}
           />
           <Infobox onClick={(e) => setStatus("DEX")}
             ood={DEX}
             name={"DEX"}
+            active={status === "DEX"}
           />
           <Infobox onClick={(e) => setStatus("NFI")}
             ood={NFI}
             name={"NFI"}
+            active={status === "NFI"}
           />
         </div>
         <div>
