@@ -14,7 +14,7 @@ export default function Header() {
     return (
         <>
         
-        <div className="container">
+        <div className="container text-center">
             <div className="header">
             <Infobox onClick={(e) => {setStatus("DEL");    
         }}

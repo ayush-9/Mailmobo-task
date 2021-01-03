@@ -13,7 +13,7 @@ export default function LeftTable({status,requests,setSelectedid}) {
        
     return (
         <div className="left-table">
-            <table>
+            <table className="table">
             <thead>
                 
                     <th><h6>AWB NUMBER</h6></th>
